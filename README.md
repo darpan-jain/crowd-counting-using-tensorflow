@@ -1,4 +1,4 @@
-# CROWD COUNTER
+# CROWD COUNTING
 
 ## Contents
 
