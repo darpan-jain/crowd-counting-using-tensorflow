@@ -10,7 +10,8 @@ Tensorflow’s Object Detection API provides pre-trained models for object detec
 
 On giving test images to a pretrained model, the inference results were not as per requirements. On some instances the model detected the entire image as a person and also missing out on some fairly obvious ones.
 
-![PT Result1](https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result1.png)
+<p align="center">
+  <img src="https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result1.png" width="640px" height="480px"/></p>
 
 
 ### TRAINING CUSTOM MODEL
