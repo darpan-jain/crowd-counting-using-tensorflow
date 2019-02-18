@@ -1,24 +1,25 @@
 # CROWD COUNTER
 
-**INTRODUCTION**
+### INTRODUCTION
 
-This repository summarizes my attempt at performing the task of implementing a people counter on the mall dataset.
+This repository contains the code of performing the task of implementing a people counter from an overhead video surveillance camera.
 
-**USING PRE-TRAINED MODELS**
+### USING PRE-TRAINED MODELS
 
 Tensorflow’s Object Detection API provides pre-trained models for object detection, which are capable of detecting around 90 classes (objects) with ‘person’ being one of the classes.
+
 On giving test images to a pretrained model, the inference results were not as per requirements. On some instances the model detected the entire image as a person and also missing out on some fairly obvious ones.
 
-![](https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result1.png)
-![_Figure 1. Results by the pretrained model_](https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result2.png)
+![PT Result1](https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result1.png)
+![PT Result2](https://github.com/darpan-jain/crowd-counter/blob/master/pretrained-results/result2.png)
 
 
-**TRAINING CUSTOM MODEL**
+### TRAINING CUSTOM MODEL
 
 A custom model had to trained for accurate implementation. The following steps were taken for the same.
 
-1. Annotated training data had to be prepared before being given to the model.
-2. 'LabelImg' was used for this purpose, to draw bounding boxes around objects of interest in the training images.
+1. **Annotated** training data had to be prepared before being given to the model.
+2. ***LabelImg*** was used for this purpose, to draw bounding boxes around objects of interest in the training images.
 3. LabelImg gives output as xml files containing coordinates of each of the bounding boxes in an image and the associated label of the object.
 4. All the xml files were converted to a 'train.csv' and then into a 'train.record' format. TFRecord format is required by Tensorflow to perform training of a custom model.
 5. Similarly a ‘val.record’ was created for validation data.
@@ -30,14 +31,14 @@ A custom model had to trained for accurate implementation. The following steps w
 11. This model can now be deployed and used for obtaining inferences
 12. The test images were the first 10 frames of the mall dataset.
 
-The model can be found on this drive link: ​[Custom Model Link](https://drive.google.com/open?id=1IBgEyaASf10KUFTCbky9mtruUpyoqDWR)
+The model can be found on this drive link: ​[Custom Model](https://drive.google.com/open?id=1IBgEyaASf10KUFTCbky9mtruUpyoqDWR)
 
-Please download and place the model in ./data/utils folder before executing main.py.
+Please download and place the model in `./data/utils` folder before executing main.py.
 
-**RESULTS**
+### RESULTS
 Upon running 'main.py', the results are saved as shown below. (Refer ‘./results’ folder)
 
 ![_Figure 2. Results of main.py_](https://github.com/darpan-jain/crowd-counter/blob/master/results/result0003.jpg)
 
-**PREREQUISITES**
+### PREREQUISITES
 All the required dependencies can be install by running the command ‘pip install -r requirements.txt’
