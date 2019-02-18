@@ -3,7 +3,7 @@
 ## Contents
 
 - [What do we have here?](#introduction)
-- [Why pretrained models don't work?](#using pre-trained models)
+- [Why pretrained models don't work?](#usingpre-trainedmodels)
 - [What now?](#training a custom model)
 - [Does it work?](#results)
 - [What all do I need?](#prerequisites)
@@ -45,7 +45,7 @@ A custom model had to trained for accurate implementation. The following steps w
 
 - Download and place the model in `./data/utils` before executing main.py.
 
-### Results :smiley_cat:
+### Results
 Upon running `main.py`, the results are as shown below. (Refer `./results`)
 
 <p align="center">
