@@ -1,12 +1,13 @@
 # CROWD COUNTER
 
 ## Contents
-- [People](#introduction)
-- [Nature](#nature)
-- [Objects](#objects)
-- [Places](#places)
-- [Symbols](#symbols)
-- [Uncategorized](#uncategorized)
+
+- [What do we have here?](#introduction)
+- [Why pretrained models don't work?](#using pre-trained models)
+- [What now?](#training a custom model)
+- [Does it work?](#results)
+- [What all do I need?](#prerequisites)
+- [Let's do this!](#usage)
 
 
 ### Introduction
@@ -25,7 +26,7 @@ This repository contains the code of performing the task of implementing a peopl
 - Clearly, using the pre-trained models is not the way to go. So, ~~Pre-Trained Models~~ :confused:
 
 
-### Training your custom model
+### Training a custom model
 
 A custom model had to trained for accurate implementation. The following steps were taken for the same:
 
@@ -44,7 +45,7 @@ A custom model had to trained for accurate implementation. The following steps w
 
 - Download and place the model in `./data/utils` before executing main.py.
 
-### Results
+### Results :smiley_cat:
 Upon running `main.py`, the results are as shown below. (Refer `./results`)
 
 <p align="center">
