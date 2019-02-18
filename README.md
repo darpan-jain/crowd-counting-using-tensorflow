@@ -10,9 +10,11 @@
 - [Let's do this!](#usage)
 
 
+
 ### Introduction
 
 This repository contains the code of performing the task of implementing a people counter from an overhead video surveillance camera by using Transfer Learning.
+
 
 ### Using pre-trained models
 
