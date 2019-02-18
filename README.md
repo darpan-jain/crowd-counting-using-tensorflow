@@ -16,9 +16,9 @@ On giving test images to a pretrained model, the inference results were not as p
 
 ### TRAINING CUSTOM MODEL
 
-A custom model had to trained for accurate implementation. The following steps were taken for the same:
+> A custom model had to trained for accurate implementation. The following steps were taken for the same:
 
-1. **Annotated training data** had to be prepared before being given to the model.
+- **Annotated training data** had to be prepared before being given to the model.
 2. ***LabelImg*** was used for this purpose, to draw bounding boxes around objects of interest in the training images.
 3. LabelImg gives output as **xml** files containing coordinates of each of the bounding boxes in an image and the associated label of the object.
 4. All the xml files were converted to a ***train.csv*** and then into a ***train.record*** format. TFRecord format is required by Tensorflow to perform training of a custom model.
@@ -26,7 +26,7 @@ A custom model had to trained for accurate implementation. The following steps w
 6. The architecture of the model is based on the **Faster RCNN** algorithm, which is an efficient and popular object detection algorithm which uses deep convolutional networks.
 7. The model config file was modified for the purpose of this assignment.
 8. The last 90 neuron classification layer of the network was removed and replaced with a new layer that gives output for only one class i.e. person.
-9. The **config file** for the same can be found in ```./data/utils/faster_rcnn.config```
+9. The **config file** for the same can be found in `./data/utils/faster_rcnn.config`
 10. After training the model, the checkpoint model is saved as `model.pb` file.
 11. This model can now be deployed and used for obtaining inferences
 12. The test images were the first 10 frames of the mall dataset.
@@ -38,7 +38,8 @@ Please download and place the model in `./data/utils` before executing main.py.
 ### RESULTS
 Upon running `main.py`, the results are as shown below. (Refer `./results`)
 
-![My Model result](https://github.com/darpan-jain/crowd-counter/blob/master/results/result0003.jpg)
+<p align="center">
+  <img src="https://github.com/darpan-jain/crowd-counter/blob/master/results/result0003.jpg" width="640px" height="480px"/></p>
 
 ### PREREQUISITES
 All the required dependencies can be install by running the command `pip install -r requirements.txt`
