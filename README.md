@@ -43,5 +43,14 @@ Upon running `main.py`, the results are as shown below. (Refer `./results`)
 <p align="center">
   <img src="https://github.com/darpan-jain/crowd-counter/blob/master/results/result0003.jpg" width="640px" height="480px"/></p>
 
+***Note:*** Since the model was trained on only **30** annotated images, the accuracy can be significantly increased by using a larger dataset to build the model.
+
 ### Prerequisites
 All the required dependencies can be install by running the command `pip install -r requirements.txt`
+
+
+### Usage
+
+- Place the images (.jpg) you need to run inference on in `./data/images/test`
+- Run `main.py`
+- Results will be saved in `./results`
