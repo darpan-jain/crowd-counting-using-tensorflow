@@ -3,8 +3,8 @@
 ## Contents
 
 - [What do we have here?](#introduction)
-- [Why pretrained models don't work?](#usingpre-trainedmodels)
-- [What now?](#training a custom model)
+- [Why pretrained models don't work?](#usingpretrainedmodels)
+- [What now?](#trainingacustom model)
 - [Does it work?](#results)
 - [What all do I need?](#prerequisites)
 - [Let's do this!](#usage)
