@@ -70,3 +70,5 @@ All the required dependencies can be install by running the command `pip install
 - Place the images (.jpg) you need to run inference on in `./data/images/test`
 - Run `main.py`
 - Results will be saved in `./results`
+
+***
