@@ -33,7 +33,7 @@ This repository contains the code of performing the task of implementing a peopl
 A custom model had to trained for accurate implementation. The following steps were taken for the same:
 
 1. **Annotated training data** had to be prepared before being given to the model fot training.
-1. ***LabelImg*** was used for this purpose, to draw bounding boxes around objects of interest in the training images.
+1. ***[LabelImg](https://github.com/tzutalin/labelImg)*** was used for this purpose, to draw bounding boxes around objects of interest in the training images.
 1. LabelImg gives output as **xml** files containing coordinates of each of the bounding boxes in an image and the associated label of the object.
 1. All the xml files were converted to a ***train.csv*** and then into a ***train.record*** format. TFRecord format is required by Tensorflow to perform training of a custom model.
 1. Similarly a ***val.record*** was created for validation data.
